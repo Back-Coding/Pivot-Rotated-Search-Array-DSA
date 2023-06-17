@@ -3,6 +3,10 @@ import java.util.*;
 class coder{
    public static int pivotRotatedSearch(int arr[],int tar,int si,int ei){
      //base case
+      if(si>ei){
+         //Invalid Index
+         return -1
+      }
     
      //work
      int mid=si+(ei-si)/2;
